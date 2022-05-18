@@ -1,0 +1,123 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+    <TextView
+        android:id="@+id/storyWindow"
+        android:layout_width="411dp"
+        android:layout_height="400dp"
+        android:text="Ты лежишь в своей кровати. Твои глаза закрыты. Что сделать дальше?"
+        android:textSize="34sp"
+        android:visibility="visible"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.0" />
+
+    <Button
+        android:id="@+id/bedroomer"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:onClick="nexter"
+        android:text="Открыть глаза"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.096"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/storyWindow"
+        app:layout_constraintVertical_bias="0.568" />
+
+    <Button
+        android:id="@+id/nothinger"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:onClick="nothinger"
+        android:text="Ничего не делать"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.955"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/storyWindow"
+        app:layout_constraintVertical_bias="0.568" />
+
+    <Button
+        android:id="@+id/haller"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="24dp"
+        android:layout_marginBottom="48dp"
+        android:onClick="haller"
+        android:text="Выйти в коридор"
+        android:visibility="invisible"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent" />
+
+    <Button
+        android:id="@+id/chester"
+        android:layout_width="179dp"
+        android:layout_height="59dp"
+        android:layout_marginStart="216dp"
+        android:onClick="chester"
+        android:text="Иследовать сундук"
+        android:visibility="invisible"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/storyWindow"
+        app:layout_constraintVertical_bias="0.349" />
+
+    <Button
+        android:id="@+id/kitchener"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="24dp"
+        android:text="Пойти на кухню"
+        android:visibility="invisible"
+        android:onClick="kitchener"
+        app:layout_constraintBottom_toTopOf="@+id/streeter"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.693"
+        app:layout_constraintStart_toEndOf="@+id/roomer" />
+
+    <Button
+        android:id="@+id/roomer"
+        android:onClick="roomer"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="24dp"
+        android:layout_marginBottom="92dp"
+        android:text="Пойти в зал"
+        android:visibility="invisible"
+        app:layout_constraintBottom_toTopOf="@+id/roofer"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <Button
+        android:id="@+id/streeter"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="24dp"
+        android:layout_marginBottom="20dp"
+        android:onClick="streeter"
+        android:text="Открыть дверь"
+        android:visibility="invisible"
+        app:layout_constraintBottom_toTopOf="@+id/haller"
+        app:layout_constraintEnd_toEndOf="parent" />
+
+    <Button
+        android:id="@+id/roofer"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="48dp"
+        android:text="Пойти на чердак"
+        android:visibility="invisible"
+        android:onClick="roofer"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toStartOf="@+id/haller"
+        app:layout_constraintHorizontal_bias="0.571"
+        app:layout_constraintStart_toStartOf="parent" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
